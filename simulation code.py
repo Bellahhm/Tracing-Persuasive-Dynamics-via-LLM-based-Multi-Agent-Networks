@@ -41,7 +41,7 @@ sys.stdout = Logger("program_prints.txt", sys.stdout)
 
 
 
-# 多个 API key
+# API key
 API_KEYS = [
 
 ]
@@ -1204,3 +1204,4 @@ if __name__ == "__main__":
     sim = Simulation(num_agents=20)
     sim.run(total_rounds=25)
     sim.final_analysis()
+
