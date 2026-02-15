@@ -88,7 +88,7 @@ def clean_agent_id(x):
 
 
 def main():
-    filepath = r"/dataset in chaos.txt"
+    filepath = r"/simulation data.txt"
     log_txt = parse_combined_file(filepath)
     rounds_data, order = parse_all_rounds(log_txt)
     # order, rounds_data = rename_rounds(order, rounds_data)
@@ -106,12 +106,10 @@ def main():
     cumulative_agents = set()  
     for r in order:
         round_contrib = compute_round_contributions(rounds_data[r])
-        # 更新累计贡献
         for agent, (num_val, den_val) in round_contrib.items():
             cum_num[agent] += num_val
             cum_den[agent] += den_val
         cumulative_agents.update(round_contrib.keys())
-        # 当前轮次的所有 agent（包括本轮和之前出现过的 agent）
         union_agents = set(all_agents) | cumulative_agents
         row = {'round': r}
         for agent in union_agents:
@@ -171,3 +169,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
