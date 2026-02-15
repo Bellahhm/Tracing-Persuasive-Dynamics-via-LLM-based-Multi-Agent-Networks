@@ -1,3 +1,4 @@
+# Main script for running the LLM-based multi-agent simulation.
 import re
 import json
 import random
@@ -1204,4 +1205,5 @@ if __name__ == "__main__":
     sim = Simulation(num_agents=20)
     sim.run(total_rounds=25)
     sim.final_analysis()
+
 
