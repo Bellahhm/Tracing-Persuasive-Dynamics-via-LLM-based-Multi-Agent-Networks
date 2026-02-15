@@ -54,7 +54,7 @@ def main():
     print(last_data[['round', 'agent', 'closeness', 'cum_rate']])
 
 
-    # 4. 截取到 R22D235
+    # 4. Intercepted to R22D235
     if 'R22D235' in mapping['round'].values:
         max_ord = mapping.loc[mapping['round']=='R22D235', 'round_order'].iloc[0]
         merged = merged[merged['round_order'] <= max_ord]
@@ -187,4 +187,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
