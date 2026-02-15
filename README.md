@@ -1,4 +1,16 @@
 # Tracing-Persuasive-Dynamics-via-LLM-based-Multi-Agent-Networks
-This is a repository for article "Influence in Motion: Tracing Persuasive Dynamics via LLM based Multi-Agent Networks "data and database of simulation codes.
+This repository contains the data and simulation codes for the article "Influence in Motion: Tracing Persuasive Dynamics via LLM-based Multi-Agent Networks".
 
-We design a hybrid architecture consisting of (1) a cognitive–affective agent (CAA) module, which equips agents with linguistic repertoires, memory traces, and reflective capacities, and (2) an adaptive interaction simulator (AIS), which governs recruitment, discourse dynamics, and network evolution. We evaluate this framework through an exemplary simulation on topic discussion, observing how discourse-driven interactions yield polarization, influence shifts, and group formation.
+This project implements a bottom-up simulation framework integrating Large Language Model (LLM)-driven agents into an agent-based modeling (ABM) environment.
+
+The architecture consists of two components:
+Cognitive–Affective Agent (CAA) Module
+Implements language-based response generation, memory traces, and context-sensitive state updating using LLM prompts.
+
+Adaptive Interaction Simulator (AIS)
+Governs interaction scheduling, discourse exchange, persuasion dynamics, and network evolution.
+
+The framework enables the observation of how discourse-driven interactions aggregate into macro-level outcomes such as opinion clustering, influence redistribution, and structural polarization.
+
+The experiment reported in the paper is based on an exemplary simulation run on a contested topic within a directed Watts–Strogatz network.
+
